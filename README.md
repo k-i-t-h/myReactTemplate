@@ -1,3 +1,137 @@
+This is my React Template with no support for OFFLINE(ServiceWorker)
+
+________________________________________________________________________________________
+									React.js Checklist 
+________________________________________________________________________________________
+
+
+*ADD REACT TO EMPTY FOLDER
+
+*Use following syntax on VScode(terminal) to install react on the current empty Folder 
+COPY BELOW
+
+npx create-react-app .
+
+________________________________________________________________________________________
+________________________________________________________________________________________
+
+*OPEN DEV SERVER
+
+*To run dev server open VScode(terminal)
+COPY BELOW 
+
+npm start
+________________________________________________________________________________________________________________________________________________________________________________
+
+***CLEAN UP***
+
+
+1) (INDEX.HTML)
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="logo192.png" />
+
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <title>my-app-play</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+
+
+
+*Should have <div>id=“root”</div> inside the body tag!!!
+________________________________________________________________________________________
+
+2) (INDEX.JS)
+
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+
+ReactDOM.render(<App />, document.getElementById("root"));
+
+
+**Above is ServiceWorker disabled template for (INDEX.JS)
+
+(If need frameworks like bootstrap etc. add it to header or index.html)
+(If project requires offline environment then do not edit/rm ServiceWorker syntax.) otherwise (INDEX.JS) should look similar to above.
+
+** DELETE (INDEX.CSS) and IMPORTS
+** DELETE LOGO.SVG and IMPORTS
+________________________________________________________________________________________
+
+3) (APP.JS)
+
+import React, { Component } from "react";
+import "./App.css";
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* 
+	   <Header />
+        <MainContent />
+        <Footer /> 
+		*/}
+      </div>
+    );
+  }
+}
+
+export default App;
+
+
+
+**ABOVE (APP.JS) should look like this
+________________________________________________________________________________________
+
+4) (APP.CSS)
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+**EDIT (APP.CSS) to specific needs or use template below for starters
+________________________________________________________________________________________
+
+5) components (Folder)
+
+Create ‘components folder’ inside the ‘src folder’
+and create all ‘component files’ inside.
+
+
+END OF CHECKLIST
+________________________________________________________________________________________
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
