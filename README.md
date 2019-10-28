@@ -17,7 +17,7 @@ ________________________________________________________________________________
 
 *OPEN DEV SERVER
 
-*To run dev server open VScode(terminal)
+*To run dev server open Terminal inside text editor (sublime, VScode etc.)
 COPY BELOW 
 
 npm start
